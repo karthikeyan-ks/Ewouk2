@@ -7,6 +7,7 @@ import { Home } from './pages/Home';
 import {About} from './pages/About';
 import { Sponsers } from './pages/Sponsers';
 import { Team } from './pages/Team';
+import Scene from './pages/Project';
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -31,7 +32,7 @@ function App() {
               <Route path='/about' element={<About />}/>
               <Route path='/sponsers' element={<Sponsers />}/>
               <Route path='/team' element={<Team/>}/>
-              <Route path='/project' element={<div>project</div>}/>
+              <Route path='/project' element={<Scene/>}/>
             </Routes>
           </BrowserRouter>
         )

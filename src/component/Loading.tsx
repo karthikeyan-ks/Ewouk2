@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '../static/image/image.png'
 import './Loading.css'
 export const Loading = () => {
     const [progress, setProgress] = useState(0);
@@ -18,7 +19,8 @@ export const Loading = () => {
     }, []);
     return (
         <div className='loading'>
-            <div style={{ width: '60%', backgroundColor: '#e0e0df', borderRadius: '10px' }}>
+            <img src={logo} alt="logo"  />
+            <div style={{ width: '40%', backgroundColor: '#e0e0df', borderRadius: '10px' }}>
                 <div
                     style={{
                         width: `${progress}%`,
@@ -28,9 +30,12 @@ export const Loading = () => {
                         transition: 'width 0.3s ease-in-out',
                     }}
                 >
-                    <span style={{ marginLeft: '5px', color: '#fff' }}>{progress}%</span>
+                    <span style={{ marginLeft: '5px', marginTop:"-2px", color: '#fff' }}>{progress}%</span>
                 </div>
             </div>
+            <p>
+                Loading
+            </p>
 
         </div>
     )
