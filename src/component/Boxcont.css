@@ -1,0 +1,15 @@
+.box {
+    position: absolute;
+    width: 98%;
+    height: 90%;
+
+    top: 12px;
+    z-index: -1; 
+    background: linear-gradient(
+      114.65deg,
+      #00060e 1.01%,
+      #233345 52.63%,
+      #000105 97.49%
+    );
+    border-radius: 40px;
+  }

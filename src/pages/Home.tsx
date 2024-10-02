@@ -8,11 +8,13 @@ export const Home = () => {
             <video src={video} className="video" autoPlay muted loop></video>
             <div className="gradient-overlay"></div>
 
-            <div className="ewouk-container">
+            <div className="ewouk-container1">
                 <div className='brand-logo'> 
                     <img src={logo} alt="E-WOUK logo" />
                 </div>
+                <div className="ewouk-container">
                 <h1 className="ewouk-text">E-WOUK</h1>
+                </div>
             </div>
         </div>
     )

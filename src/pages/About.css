@@ -1,0 +1,100 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Positioning the image container in the top-left corner */
+.image-container {
+    position: absolute;
+    top: 20px;  /* Adjust to control the distance from the top */
+    left: 20px; /* Adjust to control the distance from the left */
+    z-index: 10; /* Ensures the logo stays above other content */
+}
+
+.image-container img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.Card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.Card h1 {
+    font-family: 'K2D', sans-serif;
+    font-size: 3rem;
+    color: #fffcfc;
+    margin-bottom: 20px;
+}
+
+.Card p {
+    font-family: 'K2D', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fafafa;
+}
+
+/* For larger monitors (desktops, TVs) */
+@media screen and (min-width: 1600px) {
+    .Card h1 {
+        font-size: 4rem;
+    }
+
+    .Card p {
+        font-size: 1.3rem;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+    .Card h1 {
+        font-size: 2.5rem;
+    }
+
+    .Card p {
+        font-size: 1rem;
+    }
+
+    .image-container img {
+        width: 120px;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+    .Card h1 {
+        font-size: 2rem;
+    }
+
+    .Card p {
+        font-size: 0.9rem;
+    }
+
+    .image-container img {
+        width: 100px;
+    }
+}
+
+/* For very small mobile devices */
+@media screen and (max-width: 480px) {
+    .Card h1 {
+        font-size: 1.5rem;
+    }
+
+    .Card p {
+        font-size: 0.8rem;
+    }
+
+    .image-container img {
+        width: 80px;
+    }
+}

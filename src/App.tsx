@@ -4,6 +4,7 @@ import Navbar from './component/Navbar';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import {About} from './pages/About';
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -25,7 +26,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path='/' element={<Home/>}/>
-              <Route path='/about' element={<div>about</div>}/>
+              <Route path='/about' element={<About />}/>
               <Route path='/sponsers' element={<div>sponsers</div>}/>
               <Route path='/team' element={<div>team</div>}/>
               <Route path='/project' element={<div>project</div>}/>
