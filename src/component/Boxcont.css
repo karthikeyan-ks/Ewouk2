@@ -1,15 +1,49 @@
 .box {
-    position: absolute;
-    width: 98%;
-    min-height: 98vh;
-    top: 12px;
-    z-index: -1;
-    background: linear-gradient(
-      114.65deg,
-      #00060e 1.01%,
-      #233345 52.63%,
-      #000105 97.49%
-    );
-    border-radius: 40px;
-    overflow: hidden;
+  position: absolute;
+  width: 98%;
+  min-height: 98vh;
+  top: 12px;
+  z-index: -1;
+  background: linear-gradient(114.65deg, #00060e 1.01%, #233345 52.63%, #000105 97.49%);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+/* Tablet view adjustments */
+@media (max-width: 1024px) {
+  .box {
+      width: 95%;          /* Adjust width for tablet screens */
+      min-height: 90vh;     /* Slightly reduce height */
+      border-radius: 30px;  /* Smaller border radius on tablets */
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .box {
+      width: 90%;           /* More narrow for mobile screens */
+      min-height: 85vh;      /* Adjust height for smaller screens */
+      border-radius: 20px;   /* Smaller border radius on mobile */
+      top: 8px;              /* Adjust top position for mobile */
+  }
+}
+
+/* Very small mobile view (e.g., phones with narrow screens) */
+@media (max-width: 480px) {
+  .box {
+      width: 90%;           /* Narrower width for very small screens */
+      min-height: 98vh;      /* Adjust height */
+      border-radius: 15px;   /* Even smaller border radius */
+      top: 5px;              /* Adjust top position */
+  }
+}
+
+/* TV or larger screens adjustments */
+@media (min-width: 1440px) {
+  .box {
+      width: 80%;           /* Wider width for large screens */
+      min-height: 100vh;     /* Full height for larger screens */
+      border-radius: 50px;   /* More rounded edges for big screens */
+      top: 20px;             /* Adjust top position for larger display */
+  }
 }

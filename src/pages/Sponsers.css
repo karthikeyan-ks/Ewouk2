@@ -45,19 +45,24 @@
 }
 
 /* Responsive Styles */
+.heading {
+    margin-top: 20px; /* Space above the heading */
+}
+
+/* Responsive Styles */
+
+/* Tablet screens */
 @media (max-width: 1024px) {
     .sponsor-card1 {
         padding-top: 10px;
         width: 120px; /* Adjust width for tablets */
         height: auto;
-        background: #000000 /* Allow height to adjust based on content */
+        background: #000000; /* Allow height to adjust based on content */
     }
 }
 
+/* Mobile screens */
 @media (max-width: 768px) {
-    .team-container{
-        padding-left: 4px;
-    }
     .sponsor-card1 {
         padding-top: 10px;
         width: 100px; /* Smaller width for mobile */
@@ -67,8 +72,18 @@
     .sponsor-logo {
         width: 70%; /* Smaller logo for mobile */
     }
+
+    /* Adjust heading for mobile */
+    .heading {
+        margin-top: 80px; /* Increase the space above the heading */
+    }
+
+    .heading h1 {
+        font-size: 1.5em;
+    }
 }
 
+/* Larger screens */
 @media (min-width: 1200px) {
     .sponsor-card1 {
         padding-top: 10px;
