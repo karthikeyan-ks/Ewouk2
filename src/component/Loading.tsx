@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Loading.css'
+import loadingImage from '../static/image/pxfuel1.png'; // Adjust the path as needed
 export const Loading = () => {
     const [progress, setProgress] = useState(0);
 
@@ -29,6 +30,16 @@ export const Loading = () => {
                     }}
                 >
                     <span style={{ marginLeft: '5px', color: '#fff' }}>{progress}%</span>
+                    <div className="loader-container">
+            <div className="loader-box">
+                <img src={loadingImage} alt="Loading..." className="loader-image" />
+                <div className="loader-text">Loading...</div>
+                {/* Progress bar */}
+              
+            </div>
+        </div>
+                        
+                   
                 </div>
             </div>
 
