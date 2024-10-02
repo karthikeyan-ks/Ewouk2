@@ -12,8 +12,10 @@ const Navbar = () => {
       setActiveLink('about')
     }else if(tabIndex === "2") {
       setActiveLink('team')
-    }else {
+    }else if(tabIndex === "3") {
       setActiveLink('sponsors')
+    }else {
+      setActiveLink('project  ')
     }
   },[])
   
@@ -70,7 +72,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/sponsers"
+            href="/project"
             className={activeLink === 'project' ? 'active' : ''}
             onClick={() => {
               setActiveLink('project')

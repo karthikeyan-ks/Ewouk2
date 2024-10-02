@@ -2,7 +2,7 @@ import './App.css';
 import { Loading } from './component/Loading';
 import Navbar from './component/Navbar';
 import { useState, useEffect } from 'react';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -20,7 +20,16 @@ function App() {
         isVisible ? (
           <Loading />
         ) : (
-          <Navbar />  // Navbar appears after Loading is hidden
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<div>hai</div>}/>
+              <Route path='/about' element={<div>about</div>}/>
+              <Route path='/sponsers' element={<div>sponsers</div>}/>
+              <Route path='/team' element={<div>team</div>}/>
+              <Route path='/project' element={<div>project</div>}/>
+            </Routes>
+          </BrowserRouter>
         )
       }
     </div>
