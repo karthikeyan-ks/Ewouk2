@@ -13,7 +13,7 @@
 @media (max-width: 1024px) {
   .box {
       width: 95%;          /* Adjust width for tablet screens */
-      min-height: 90vh;     /* Slightly reduce height */
+      min-height: 98vh;     /* Slightly reduce height */
       border-radius: 30px;  /* Smaller border radius on tablets */
   }
 }
@@ -22,7 +22,7 @@
 @media (max-width: 768px) {
   .box {
       width: 90%;           /* More narrow for mobile screens */
-      min-height: 85vh;      /* Adjust height for smaller screens */
+      min-height: 98vh;      /* Adjust height for smaller screens */
       border-radius: 20px;   /* Smaller border radius on mobile */
       top: 8px;              /* Adjust top position for mobile */
   }
@@ -41,7 +41,7 @@
 /* TV or larger screens adjustments */
 @media (min-width: 1440px) {
   .box {
-      width: 80%;           /* Wider width for large screens */
+      width: 98%;           /* Wider width for large screens */
       min-height: 100vh;     /* Full height for larger screens */
       border-radius: 50px;   /* More rounded edges for big screens */
       top: 20px;             /* Adjust top position for larger display */
