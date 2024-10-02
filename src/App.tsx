@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import {About} from './pages/About';
+import { Sponsers } from './pages/Sponsers';
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -27,7 +28,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/about' element={<About />}/>
-              <Route path='/sponsers' element={<div>sponsers</div>}/>
+              <Route path='/sponsers' element={<Sponsers />}/>
               <Route path='/team' element={<div>team</div>}/>
               <Route path='/project' element={<div>project</div>}/>
             </Routes>
