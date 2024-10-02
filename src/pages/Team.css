@@ -1,0 +1,163 @@
+.team-container {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.slide-container{
+    width: 80%;
+    max-width: 80%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+.team-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Executive member styles */
+.executive-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Space between members */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.executive-member:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.team-photo {
+    width: 150px; /* Standard size for executive members */
+    height: 150px;
+    border-radius: 50%; /* Circular photos */
+    object-fit: cover; /* Crop image to fill the space */
+}
+
+/* Team members (non-executive) should be smaller */
+.small-photo {
+    width: 80px; /* Smaller size for team members */
+    height: 80px; /* Adjust height accordingly */
+}
+
+.team-member {
+    flex: 0 1 100px; /* Set a base size for members */
+    max-width: 100px; /* Prevent members from getting too large */
+    margin: 10px; /* Space between members */
+}
+
+.team-member p {
+    margin-top: 5px; /* Reduced space between the photo and name */
+    font-size: 0.9em; /* Smaller font size for better fit */
+    color: #C2CFE0; /* Customize text color */
+}
+
+.team-member .position {
+    color: #ffffff;
+    font-size: 0.8em; /* Smaller font size for position */
+    background: linear-gradient(116.63deg, rgba(32, 0, 52, 0.3) 2.39%, rgba(103, 0, 167, 0.3) 50.84%, rgba(42, 0, 68, 0.3) 100%);
+    padding: 2px 5px; /* Reduced padding for position */
+    border-radius: 10px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+}
+
+.team-member:hover .position {
+    opacity: 1; /* Show on hover */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .team-photo {
+        width: 120px; /* Slightly smaller size for mobile */
+        height: 120px;
+    }
+
+    .team {
+        display: none; /* Hide non-executive team members on mobile */
+    }
+
+    .small-photo {
+        width: 70px; /* Make small photos more responsive */
+        height: 70px;
+        display: none; /* Hide small photos on mobile */
+    }
+
+    .team-member {
+        flex: 0 1 80px; /* Reduce base size for members */
+        max-width: 80px; /* Prevent members from getting too large */
+        margin: 5px; /* Adjust space between members */
+    }
+
+   
+
+   
+
+    /* Ensure executive members are visible and centered on mobile */
+    .executive-member {
+        margin-top: 20px; /* Add top margin to separate from other content */
+    }
+
+    /* Adjust the heading for executive members */
+    .executive-member h2 { /* Change the selector according to your HTML structure */
+        margin-top: 10%; /* Add space above heading */
+        font-size: 1.2em; /* Adjust font size as needed */
+        color: #ffffff; /* Customize heading color */
+    }
+}
+.ex{
+    margin-top: 20%;
+}
+
+@media (max-width: 480px) {
+    .team-photo {
+        width: 100px; /* Even smaller for very small screens */
+        height: 100px;
+    }
+    .executive-member h2 { /* Change the selector according to your HTML structure */
+        margin-top: 100px; /* Add space above heading */
+        font-size: 1.2em; /* Adjust font size as needed */
+        color: #ffffff; /* Customize heading color */
+    }
+    .team {
+        display: none; /* Hide non-executive team members on mobile */
+    }
+    .position1{
+        display: none;
+
+    }
+
+    .executive-member {
+        margin-top: 20px; /* Add margin to separate from other content */
+    }
+
+    .executive-panel-title {
+        margin-top: 40px; /* Additional space for mobile view */
+        font-size: 1.2em; /* Adjust font size as needed */
+        color: #ffffff; /* Customize heading color */
+    }
+    .small-photo {
+        width: 60px; /* Adjust size for very small screens */
+        height: 60px;
+    }
+
+    .team-member {
+        flex: 0 1 60px; /* Further reduce size for small screens */
+        max-width: 60px;
+        margin: 5px; /* Space between members */
+    }
+
+    .team-member1 p {
+        font-size: 0.7em; /* Smaller font size for mobile */
+        display: none; /* Ensure name is hidden on very small screens */
+    }
+}
