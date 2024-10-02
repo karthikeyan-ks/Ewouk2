@@ -4,14 +4,17 @@
     max-height: 100%;
     margin: 0 auto;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    padding: 0 10px; /* Add padding to avoid overlap */
 }
+
 .slide-container{
     width: 80%;
     max-width: 80%;
     max-height: 90%;
     margin: 0 auto;
 }
+
 .team-container {
     text-align: center;
     padding: 20px;
@@ -21,6 +24,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next line */
     justify-content: center; /* Center items horizontally */
+    margin: 0 auto; /* Ensure it's centered properly */
 }
 
 /* Executive member styles */
@@ -76,10 +80,11 @@
 }
 
 /* Responsive Styles for Mobile */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
     .team-photo {
-        width: 120px; /* Slightly smaller size for mobile */
-        height: 120px;
+        width: 100px; /* Slightly smaller size for mobile */
+        height: 100px;
     }
 
     .team {
@@ -93,14 +98,14 @@
     }
 
     .team-member {
-        flex: 0 1 80px; /* Reduce base size for members */
-        max-width: 80px; /* Prevent members from getting too large */
+        flex: 0 1 45%; /* Adjust size to ensure two items per row */
+        max-width: 45%; /* Ensure two items per row */
         margin: 5px; /* Adjust space between members */
     }
 
-   
-
-   
+    .team-row {
+        flex-wrap: wrap; /* Ensure items wrap to the next line */
+    }
 
     /* Ensure executive members are visible and centered on mobile */
     .executive-member {
@@ -108,32 +113,36 @@
     }
 
     /* Adjust the heading for executive members */
-    .executive-member h2 { /* Change the selector according to your HTML structure */
+    .executive-member h2 {
         margin-top: 10%; /* Add space above heading */
         font-size: 1.2em; /* Adjust font size as needed */
         color: #ffffff; /* Customize heading color */
     }
-}
-.ex{
-    margin-top: 20%;
+
+    .team-container {
+        padding: 0 5px; /* Add padding to prevent overlap on small screens */
+    }
 }
 
 @media (max-width: 480px) {
     .team-photo {
-        width: 100px; /* Even smaller for very small screens */
-        height: 100px;
+        width: 75px; /* Even smaller for very small screens */
+        height: 75px;
     }
-    .executive-member h2 { /* Change the selector according to your HTML structure */
+
+    .executive-member h2 {
         margin-top: 100px; /* Add space above heading */
         font-size: 1.2em; /* Adjust font size as needed */
-        color: #ffffff; /* Customize heading color */
+        color: #ffffff;
+        margin-right: 55px; /* Customize heading color */
     }
+
     .team {
         display: none; /* Hide non-executive team members on mobile */
     }
-    .position1{
-        display: none;
 
+    .position1 {
+        display: none;
     }
 
     .executive-member {
@@ -145,19 +154,26 @@
         font-size: 1.2em; /* Adjust font size as needed */
         color: #ffffff; /* Customize heading color */
     }
+
     .small-photo {
         width: 60px; /* Adjust size for very small screens */
         height: 60px;
     }
 
     .team-member {
-        flex: 0 1 60px; /* Further reduce size for small screens */
-        max-width: 60px;
+        flex: 0 1 45%; /* Ensure two members per row */
+        max-width: 45%; /* Limit width to 45% for small screens */
         margin: 5px; /* Space between members */
     }
 
     .team-member1 p {
         font-size: 0.7em; /* Smaller font size for mobile */
-        display: none; /* Ensure name is hidden on very small screens */
+        display: none;
+        margin-right: 55px; /* Ensure name is hidden on very small screens */
+    }
+
+    /* Adjust overall container padding to prevent overlap */
+    .team-container {
+        padding: 0 15px; /* Add padding to prevent content overflow */
     }
 }
