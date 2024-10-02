@@ -3,6 +3,7 @@ import { Loading } from './component/Loading';
 import Navbar from './component/Navbar';
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -23,7 +24,7 @@ function App() {
           <BrowserRouter>
             <Navbar />
             <Routes>
-              <Route path='/' element={<div>hai</div>}/>
+              <Route path='/' element={<Home/>}/>
               <Route path='/about' element={<div>about</div>}/>
               <Route path='/sponsers' element={<div>sponsers</div>}/>
               <Route path='/team' element={<div>team</div>}/>
