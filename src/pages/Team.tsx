@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import image1 from '../assets/images/image1.jpeg';
 import image2 from '../assets/images/image2.jpeg';
 import image3 from '../assets/images/image3.jpeg';
-import dpImage from '../assets/images/WhatsApp Image 2024-09-28 at 7.21.43 PM (2).jpeg'; 
+import dpImage from '../assets/images/WhatsApp Image 2024-09-28 at 7.21.43 PM (2).jpeg';
 
 export const Team = () => {
     const settings = {
@@ -29,7 +29,7 @@ export const Team = () => {
         { name: 'Jayadev S Nair', photo: dpImage, position: 'Driver' },
         { name: 'Mohammad Farhan Thangal', photo: dpImage, position: 'Treasurer' },
     ];
-    
+
     const teamMembers = [
         { name: 'Team Member 1', photo: dpImage, position: 'Member' },
         { name: 'Team Member 2', photo: dpImage, position: 'Member' },
@@ -61,7 +61,7 @@ export const Team = () => {
         { name: 'Team Member 2', photo: dpImage, position: 'Member' },
         { name: 'Team Member 2', photo: dpImage, position: 'Member' },
         { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-       
+
     ];
 
     return (
@@ -76,30 +76,30 @@ export const Team = () => {
                     ))}
                 </Slider>
             </div>
-            <div className="team-container">
-             
-            <h1 className='ex'>Executive Panel</h1>
-            <div className="team-row executive-row">
-                {executivePanel.map((member, index) => (
-                    <div key={index} className="team-member executive-member">
-                        <img src={member.photo} alt={member.name} className="team-photo" />
-                        <p>{member.name}</p>
-                        <div className="position">{member.position}</div>
-                    </div>
-                ))}
-            </div>
+            <div>
 
-            <h1 className='team'>Team Members</h1>
-            <div className="team-row member-row">
-                {teamMembers.map((member, index) => (
-                    <div key={index} className="team-member1">
-                        <img src={member.photo} alt={member.name} className="team-photo small-photo" />
-                        <p>{member.name}</p>
-                        <div className="position1">{member.position}</div>
-                    </div>
-                ))}
+                <h1 className='ex'>Executive Panel</h1>
+                <div className="team-row executive-row">
+                    {executivePanel.map((member, index) => (
+                        <div key={index} className="team-member executive-member">
+                            <img src={member.photo} alt={member.name} className="team-photo" />
+                            <p>{member.name}</p>
+                            <div className="position">{member.position}</div>
+                        </div>
+                    ))}
+                </div>
+
+                <h1 className='team'>Team Members</h1>
+                <div className="team-row member-row">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="team-member1">
+                            <img src={member.photo} alt={member.name} className="team-photo small-photo" />
+                            <p>{member.name}</p>
+                            <div className="position1">{member.position}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
         </div>
     );
 };
