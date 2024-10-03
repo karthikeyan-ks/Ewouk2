@@ -76,16 +76,25 @@
 
 /* For mobile phones */
 @media screen and (max-width: 768px) {
-  .ewouk-text {
-    font-size: 7rem; /* Smaller text size for mobile phones */
-    letter-spacing: 0.1rem;
-  }
+
+    .ewouk-container1 {
+        height: 80%;
+        font-size: 5rem;
+        width: 80%;
+    }
+
+    .ewouk-text {
+        margin-top: 100px;
+        font-size: 30px; /* Smaller text size for mobile phones */
+        letter-spacing: 0.1rem;
+    }
 }
 
 /* For very small mobile devices */
 @media screen and (max-width: 480px) {
-  .ewouk-text {
-    font-size: 5rem; /* Even smaller text for small phones */
-    letter-spacing: 0.05rem;
-  }
+    .ewouk-text {
+        margin-top: 100px;
+        font-size: 3rem; /* Smaller text size for mobile phones */
+        letter-spacing: 0.1rem;
+    }
 }

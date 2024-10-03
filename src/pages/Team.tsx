@@ -30,40 +30,6 @@ export const Team = () => {
         { name: 'Mohammad Farhan Thangal', photo: dpImage, position: 'Treasurer' },
     ];
 
-    const teamMembers = [
-        { name: 'Team Member 1', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-        { name: 'Team Member 2', photo: dpImage, position: 'Member' },
-
-    ];
-
     return (
         <div className='team-container'>
             <h1>Our Team</h1>
@@ -77,7 +43,6 @@ export const Team = () => {
                 </Slider>
             </div>
             <div>
-
                 <h1 className='ex'>Executive Panel</h1>
                 <div className="team-row executive-row">
                     {executivePanel.map((member, index) => (
@@ -85,17 +50,6 @@ export const Team = () => {
                             <img src={member.photo} alt={member.name} className="team-photo" />
                             <p>{member.name}</p>
                             <div className="position">{member.position}</div>
-                        </div>
-                    ))}
-                </div>
-
-                <h1 className='team'>Team Members</h1>
-                <div className="team-row member-row">
-                    {teamMembers.map((member, index) => (
-                        <div key={index} className="team-member1">
-                            <img src={member.photo} alt={member.name} className="team-photo small-photo" />
-                            <p>{member.name}</p>
-                            <div className="position1">{member.position}</div>
                         </div>
                     ))}
                 </div>
